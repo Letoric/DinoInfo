@@ -1,0 +1,19 @@
+This mod offers two functions that work well together, and also can operate independently.
+Dino Info:
+Gathers dino, BASE level, and location on an interval
+
+Polls Dino info once if configured for false, and repeatedly if configured for true. The lowest interval accepted is 300 seconds (5 minutes) as this can cause excessive server load, and very bloated log files. 
+
+Dino Culler:
+Trims dino population based on the parameters you specify, to gradually drive the spawned dino levels towards the higher end of their spawning ranges. 
+
+INI Settings are in the discussions thread.
+
+::ModID::
+930454181
+
+
+***IMPORTANT***
+Do not leave the polling for the DinoInfo module, running for extended periods. The log file can grow to sizes that make it very cumbersome, if not impossible to parse, and also potentially run you out of disk space. This is built purely for spawn analytics after making changes to your servers, to get a feel for quantities and locations of dinos, as well as level range. 
+
+You can leave the DinoCuller module running permanently, however, tune the frequency based on your server performance until you find a happy balance between trimming population and any server lag you may be noticing. I have tested this with 1.5x dino spawns, and it worked fine on a 5 minute interval. 
