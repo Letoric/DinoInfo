@@ -7,6 +7,22 @@ Polls Dino info once if configured for false, and repeatedly if configured for t
 Dino Culler:
 Trims dino population based on the parameters you specify, to gradually drive the spawned dino levels towards the higher end of their spawning ranges. 
 
+Skip checks:
+
+Checks if a dino name tag matches the exclusion list (Optional Configuration entry) | True skips the dino 
+
+Checks if a dino is tamable | False skips the dino (Requires configuration setting)
+
+Checks if a dino has an absolute level defined (eg:Titanosaur, Jerboa) | True skips the dino
+
+Checks if a dino meets the level criteria (Configurable) | False skips the dino
+
+Checks if a dino is tamed | True skips the dino
+
+Checks if a dino is conscious | False skips the dino
+
+Checks if a dino is in stasis | False skips the dino
+
 INI Settings are in the discussions thread.
 
 ::ModID::
